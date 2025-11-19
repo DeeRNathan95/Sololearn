@@ -1,0 +1,10 @@
+var numArr = [0, 1, 2, 3, 0, 5, 0];
+console.log(numArr.lastIndexOf(0));
+
+Output is 6
+
+========================================
+
+Why?
+
+lastIndexOf(0) searches the array from right to left and returns the index of the last occurrence of 0.
