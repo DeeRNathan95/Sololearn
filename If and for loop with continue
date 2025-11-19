@@ -1,0 +1,32 @@
+var y = 0;
+for (var x = 0; x < 3; x++) {
+    if (x == 2) {
+        x = 5;
+        continue;
+    }
+    y++;
+}
+document.write(y);
+
+
+Output is 2
+
+=============
+
+Why the output is 2:
+
+x = 0 → condition not met → y++ → y = 1
+
+x = 1 → condition not met → y++ → y = 2
+
+x = 2 → condition is met
+
+x becomes 5
+
+continue skips y++
+
+Loop condition x < 3 fails → loop ends
+
+So the final value of y is:
+
+✅ 2
