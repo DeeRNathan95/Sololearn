@@ -1,0 +1,20 @@
+
+
+let set1 = new Set([1, 2, 2, 3, 3]);
+let set2 = new Set([1, 2, 3]);
+console.log(set1.size == set2.size);
+
+
+
+
+ Breakdown:
+- Set objects only store unique values.
+- So:
+- set1 becomes {1, 2, 3} → size = 3
+- set2 is already {1, 2, 3} → size = 3
+- Comparing sizes: 3 == 3 → true
+
+
+
+
+
