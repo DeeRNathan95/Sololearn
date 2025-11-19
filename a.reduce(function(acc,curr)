@@ -1,0 +1,29 @@
+var a = [1, 2, 3, 4];
+var b = a.reduce(function(acc, curr) {
+  return acc + curr;
+}, 1);
+console.log(b);
+
+Answer is 11
+
+=============================================================
+
+.reduce() is a method on arrays that lets you combine all elements into a single value — like summing numbers, merging strings, or building objects.
+
+array.reduce(callback, initialValue);
+- callback is a function that runs once for each element
+- It receives:
+- acc → the accumulator (running total)
+- curr → the current item in the array
+- initialValue is what acc starts as
+
+What the Function Does
+Each time .reduce() loops through the array, it calls your function to decide:
+“How do I combine acc and curr?”
+
+So this:
+function(acc, curr) {
+  return acc + curr;
+}
+
+
