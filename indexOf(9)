@@ -1,0 +1,13 @@
+var arr = [-1, 0, 1, 2, 3, 4, 5, 6, 7, 8];
+var index = arr.indexOf(9);
+var result = index < 0 ? 1 : 0;
+console.log(result);
+
+=============================
+
+- arr.indexOf(9) → returns -1 because 9 is not in the array.
+- index < 0 → true (since -1 < 0)
+- So the ternary expression becomes:
+result = true ? 1 : 0 → result = 1
+
+
