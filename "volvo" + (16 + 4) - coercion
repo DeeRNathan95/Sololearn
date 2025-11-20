@@ -1,0 +1,20 @@
+var x = "volvo" + 16 + 4;
+document.write(x);
+
+========================
+
+🔍 What Actually Happens
+JavaScript reads this left to right, and the + operator behaves differently depending on the types:
+- "volvo" + 16 → "volvo16"
+- Because one side is a string, JavaScript converts 16 to a string and concatenates.
+- "volvo16" + 4 → "volvo164"
+- Again, 4 is coerced into a string and concatenated.
+✅ Final result: "volvo164"
+
+"volvo" + (16 + 4) // ➜ "volvo20"
+only happens if you use parentheses:
+
+"volvo" + (16 + 4) // ➜ "volvo20"
+"volvo" + 16 + 4   // ➜ "volvo164"
+
+
