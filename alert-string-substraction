@@ -1,0 +1,12 @@
+what will be alerted?
+alert("1" - "1");
+
+=============================================
+
+Correct Answer: 0
+🧠 Why?
+Even though both "1" values are strings, the - operator in JavaScript forces numeric conversion:
+"1" - "1" → 1 - 1 → 0
+
+
+Unlike the + operator (which can trigger string concatenation), the - operator only works with numbers, so JavaScript automatically converts both "1" strings to numbers before subtracting.
