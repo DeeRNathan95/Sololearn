@@ -1,0 +1,24 @@
+console.log([1, 2, 3, 4].reduce(function(a, b) {
+    return a + b;
+}));
+
+I said : 11
+
+=================================
+
+ Correct Output: 10
+🧠 Why?
+Let’s walk through how reduce() works here:
+- The array is [1, 2, 3, 4]
+- No initial value is provided, so reduce() starts with:
+- a = 1 (first element)
+- b = 2 (second element)
+- a + b = 3
+Then it continues:
+- a = 3, b = 3 → 6
+- a = 6, b = 4 → 10
+So the final result is 10
+
+
+======================
+Comment there was no 2nd argument with initial value provided so reduce starts with a-1 abd b=2 => 1+2
