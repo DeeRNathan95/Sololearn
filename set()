@@ -7,7 +7,7 @@ console.log(set1.size == set2.size);
 
 
 
- Breakdown:
+Explaination Breakdown below:
 - Set objects only store unique values.
 - So:
 - set1 becomes {1, 2, 3} → size = 3
